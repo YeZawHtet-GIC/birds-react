@@ -1,0 +1,8 @@
+.bird-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bird-card:hover {
+  transform: scale(1.05);
+}
+
