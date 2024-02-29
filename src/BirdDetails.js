@@ -1,7 +1,8 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import React from "react";
-
+//react loading 
+import ReactLoading from 'react-loading';
 export default function BirdDetails() {
   const { id } = useParams();
   const {
@@ -20,7 +21,9 @@ export default function BirdDetails() {
 
   return (
     <div className="col-md-8 offset-md-2 bg-dark p-5 mt-3 rounded text-warning">
-      {isPending && <div>Loading...</div>}
+       {isPending && (
+        <div className="text-warning bg-dark text-center fs-1" style={{ display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh" }}><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
+      )}
       {error && <div>{error}</div>}
       {bird && (
         <div>

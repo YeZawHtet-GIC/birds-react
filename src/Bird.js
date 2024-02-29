@@ -1,7 +1,8 @@
 import "./App.css";
 import BirdList from "./BirdList";
 import useFetch from "./useFetch";
-
+//react loading 
+import ReactLoading from 'react-loading';
 function Bird() {
   const {
     error,
@@ -12,7 +13,7 @@ function Bird() {
     <>
       {error && <div>{error}</div>}
       {isPending && (
-        <div className="text-warning text-center fs-1">Loading...</div>
+        <div className="text-warning bg-dark text-center fs-1" style={{ display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh" }}><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
       )}
       {birds && <BirdList birds={birds} />}
     </>
