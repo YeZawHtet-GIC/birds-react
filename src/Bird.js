@@ -13,7 +13,7 @@ function Bird() {
     <>
       {error && <div>{error}</div>}
       {isPending && (
-        <div className="text-warning bg-dark text-center fs-1" style={{ display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh" }}><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
+        <div className="text-warning bg-dark text-center fs-1 pending-style" ><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
       )}
       {birds && <BirdList birds={birds} />}
     </>

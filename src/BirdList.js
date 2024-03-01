@@ -14,8 +14,7 @@ export default function BirdList({ birds }) {
                 <img
                   src={bird.ImagePath}
                   alt={bird.BirdEnglishName}
-                  className="card-img-top img-fluid"
-                  style={{ maxHeight: "300px", objectFit: "cover" }}
+                  className="card-img-top img-fluid img-fix"
                 />
                 <div className="card-body">
                   <h2 className="card-title text-warning">

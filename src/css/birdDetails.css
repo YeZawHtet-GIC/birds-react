@@ -1,0 +1,11 @@
+.img-fix {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.pending-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

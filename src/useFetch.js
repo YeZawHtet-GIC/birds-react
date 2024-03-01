@@ -18,8 +18,8 @@ export default function useFetch(url) {
       })
       .then(data => {
         setIsPending(false);
-        setData(data);
         setError(null);
+        setData(data);
       })
       .catch(err => {
         if (err.name === 'AbortError') {

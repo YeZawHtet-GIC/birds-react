@@ -1,8 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "./useFetch";
 import React from "react";
-//react loading 
-import ReactLoading from 'react-loading';
+//custom css
+import "./css/birdDetails.css";
+//react loading
+import ReactLoading from "react-loading";
 export default function BirdDetails() {
   const { id } = useParams();
   const {
@@ -15,14 +17,18 @@ export default function BirdDetails() {
     fetch("https://birds-data-json.vercel.app/Tbl_Bird/" + bird.id, {
       method: "DELETE",
     }).then(() => {
-      navigate("/");
+      navigate("/birds");
     });
   };
 
   return (
     <div className="col-md-8 offset-md-2 bg-dark p-5 mt-3 rounded text-warning">
-       {isPending && (
-        <div className="text-warning bg-dark text-center fs-1" style={{ display:"flex", justifyContent:"center", alignItems:"center", minHeight:"100vh" }}><ReactLoading type="cylon" color="blue" height={100} width={100} /></div>
+      {isPending && (
+        <div
+          className="text-warning bg-dark text-center fs-1 pending-style"
+        >
+          <ReactLoading type="cylon" color="blue" height={100} width={100} />
+        </div>
       )}
       {error && <div>{error}</div>}
       {bird && (
@@ -34,8 +40,7 @@ export default function BirdDetails() {
           <img
             src={process.env.PUBLIC_URL + "/" + bird.ImagePath}
             alt={bird.BirdEnglishName}
-            className="card-img-top img-fluid"
-            style={{ maxHeight: "300px", objectFit: "cover" }}
+            className="card-img-top img-fluid img-fix"
           />
           <hr />
           <button onClick={handleClick} className="btn btn-outline-danger mt-3">

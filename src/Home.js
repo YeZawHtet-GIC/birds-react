@@ -84,10 +84,7 @@ function Home() {
         <div className="col-lg-3 mb-4 hover-effect" data-aos="flip-up">
           <Link to="./birds" className="btn mt-3 bg-dark">
             <div className="card border-0 shadow h-100 bg-dark text-warning">
-              <div
-                className="card-body text-center d-flex align-items-center"
-                style={{ height: "100px", textAlign: "center" }}
-              >
+              <div className="card-body text-center d-flex align-items-center card-h-align">
                 <h5 className="card-title mb-0">
                   ၈၆၀၀ ငှက်အမျိုးပေါင်း(မျိုးစိတ်ပေါင်း)
                 </h5>
@@ -98,10 +95,7 @@ function Home() {
         <div className="col-lg-3 mb-4 hover-effect" data-aos="flip-up">
           <Link to="./birds" className="btn mt-3 bg-dark">
             <div className="card border-0 shadow h-100 bg-dark text-warning">
-              <div
-                className="card-body text-center d-flex align-items-center"
-                style={{ height: "100px", textAlign: "center" }}
-              >
+              <div className="card-body text-center d-flex align-items-center card-h-align">
                 <h5 className="card-title mb-0">၁၆၀၀ မျိုးစုပေါင်း</h5>
               </div>
             </div>
@@ -110,10 +104,7 @@ function Home() {
         <div className="col-lg-3 mb-4 hover-effect" data-aos="flip-up">
           <Link to="./birds" className="btn mt-3 bg-dark">
             <div className="card border-0 shadow h-100 bg-dark text-warning">
-              <div
-                className="card-body text-center d-flex align-items-center"
-                style={{ height: "100px", textAlign: "center" }}
-              >
+              <div className="card-body text-center d-flex align-items-center card-h-align">
                 <h5 className="card-title mb-0">၁၅၅ မျိုးရင်းပေါင်း</h5>
               </div>
             </div>
@@ -122,10 +113,7 @@ function Home() {
         <div className="col-lg-3 mb-4 hover-effect" data-aos="flip-up">
           <Link to="./birds" className="btn mt-3 bg-dark">
             <div className="card border-0 shadow h-100 bg-dark text-warning">
-              <div
-                className="card-body text-center d-flex align-items-center"
-                style={{ height: "100px", textAlign: "center" }}
-              >
+              <div className="card-body text-center d-flex align-items-center card-h-align">
                 <h5 className="card-title mb-0">၂၇ မျိုးစဉ်ပေါင်း</h5>
               </div>
             </div>
